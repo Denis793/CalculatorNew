@@ -1,0 +1,109 @@
+@use 'reset' as *;
+
+.calculator {
+  padding: 2rem;
+  width: 40rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  border: 1px solid #ccc;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.keypad {
+  display: flex;
+
+  gap: 10px;
+  margin: 2rem auto;
+  max-width: 30rem;
+}
+
+.buttonSection {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+button {
+  width: 4rem;
+  height: 2.5rem;
+  margin: 0.5rem;
+  border: none;
+  border-radius: 6px;
+  color: #1d7c94;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.1s ease;
+
+  &:hover {
+    background-color: #0056b3;
+    color: #fff;
+  }
+
+  &:active {
+    background-color: #004085;
+  }
+}
+
+.display {
+  width: 100%;
+  height: 15rem;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  text-align: right;
+  background-color: #e5f0fb;
+}
+
+.active-operator {
+  background-color: #ffa500;
+  color: #fff;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  font-family: monospace;
+  font-size: 0.8rem;
+  padding: 4px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.current.off {
+  color: #aaa;
+  font-style: italic;
+  opacity: 0.6;
+}
+
+.indicators {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 10px;
+  font-size: 0.9rem;
+  justify-content: center;
+  color: #999;
+}
+
+.indicator {
+  padding: 2px 6px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  transition: 0.2s;
+}
+
+.indicator.active {
+  color: #fff;
+  background-color: #2d8cf0;
+  border-color: #2d8cf0;
+}

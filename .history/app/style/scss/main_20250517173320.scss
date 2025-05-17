@@ -1,0 +1,17 @@
+@use 'reset' as *;
+
+.calculatorContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin: 2rem;
+}
+
+.display {
+  width: 100%;
+}
