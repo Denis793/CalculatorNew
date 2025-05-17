@@ -37,7 +37,7 @@ A modern modular JavaScript calculator with memory, square root, power operation
 
 ## 🛡 Input validation
 
-- Prevents `(` directly after a number  
+- Prevents `( )` directly after a number  
 - Blocks `=` if parentheses are unbalanced
 
 ---
